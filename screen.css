@@ -9,29 +9,28 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 /*Screen Styles*/
 
 html {
-  background-image: url("img/20px-baseline.png");
-  background: solid #D9CEAD
+  background-image: url('img/20px-baseline.png');
+  /* background: #FAF2DE; */
 }
 
 body {
   font-family: Helvetica, Arial, sans-serif; /* Use Helvetica, Arial, or a sans-serif font*/
   font-size: 14px; /* Set the base font size to 14px */
   line-height: 20px; 
-	padding-top: 10px;
-  padding-left: 5px;
-	border-left: 10px solid #8A866A; /*green solid #7C9C46 */
-	border-top: 40px solid #8A866A;
+	padding-top: 20px;
+  padding-left: 15px;
+	border-left: 0px solid #8A866A; /*green solid #7C9C46 */
+	border-top: 80px solid #8A866A;
 }
 
 div#top {
 	font-size: 24px;
-	
-  padding-right: 0px;
-  padding-left: 360px;
-  position: absolute;
-	top: 10px;
+	padding-right: 0px;
+  padding-left: 0px;
+  top: 20px;
   display: inline;
-  color: white;
+  color: #FAF2DE;
+	position: absolute;
   
 }
 
@@ -42,7 +41,7 @@ h1 {
 
 div#navig {
 	font-size: 14px;
-	padding-top:0px;
+	padding-top:40px;
 	padding-right: 10px;
   position: absolute;
 	 /* This lines up the navigation with the rest of the page (paddin-left 5 + border-left 10) */
@@ -63,7 +62,7 @@ ul#navi li a {
   
   
   text-decoration: none;
-	color: white;
+	color: #FAF2DE;
 	font-size: 10px;
   background-color: #A36D5C;
   padding: 4px;
@@ -71,8 +70,22 @@ ul#navi li a {
 
 ul#navi li a:hover {
   
-  color: white;
+  color: #FAF2DE;
   background-color: #8A866A; /* alternate color for hovering. other choice: #9C968B */
+}
+
+@media screen and (min-width: 1010px) {
+  .g960 #page {
+    width: 940px; /*Total width works out to 960*/
+    padding: 0px 10px 0px 10px;
+    background-image: url('img/960px-10-60-10-unit.png');
+  }
+  /* See http://978.gs/ */
+  .g978 #page {
+    width: 978px; /*Total with works out to 1008*/
+    padding: 0px 15px 0px 15px;
+    background-image: url('img/978px-15-54-15-unit.png');
+  }
 }
 
 
