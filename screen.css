@@ -9,29 +9,41 @@ html{color:#000;background:#FFF}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre
 /*Screen Styles*/
 
 html {
-  background-image: url('img/20px-baseline.png');
-  /* background: #FAF2DE; */
+  background-image: url('img/20px-baseline1.png');
+  background: #FAF2DE; 
 }
 
 body {
-  font-family: Helvetica, Arial, sans-serif; /* Use Helvetica, Arial, or a sans-serif font*/
+  font-family: 'Anada', serif; /* Use Helvetica, Arial, or a sans-serif font*/
   font-size: 14px; /* Set the base font size to 14px */
-  line-height: 20px; 
-	padding-top: 20px;
-  padding-left: 15px;
-	border-left: 0px solid #8A866A; /*green solid #7C9C46 */
-	border-top: 80px solid #8A866A;
+  line-height: 20px; /* Set line height for the page to 20px */
+	padding-top: 20px; /* Add some padding to the top of the page */
+  padding-left: 15px; /* Add padding along the left of the page, for the length of the page */
+	border-left: 0px solid #8A866A; /* In order to   */
+	border-top: 120px solid #8A866A; /* Add brown border along the top of the page. Alternate green #7C9C46 */
+}
+
+div#page{
 }
 
 div#top {
-	font-size: 24px;
-	padding-right: 0px;
+	font-size: 36px; /* Set page title font size */
+	padding-right: 0px; 
   padding-left: 0px;
   top: 20px;
-  display: inline;
+  display: inline; 
   color: #FAF2DE;
 	position: absolute;
-  
+}
+div#top2 {
+  font-size: 36px; /* Set page title font size */
+	padding-right: 0px; 
+  padding-left: 90px;
+  top: 48px;
+  display: inline; 
+  color: #FAF2DE;
+	position: absolute;
+  font-weight: bold;
 }
 
 h1 {
@@ -40,40 +52,36 @@ h1 {
 }
 
 div#navig {
-	font-size: 14px;
-	padding-top:40px;
-	padding-right: 10px;
-  position: absolute;
-	 /* This lines up the navigation with the rest of the page (paddin-left 5 + border-left 10) */
-  top: 10px;
-  display: inline;
-  
-  
-
+  font-family: Helvetica, Arial, sans-serif;	
+  font-size: 14px; /* Set navigation links font size */
+	padding-top: 0px; /* put padding to move navigation links */
+	position: absolute;
+  display: inline; 
+  top: 85px; 
 }
 
 ul#navi li {
-  
 	display: inline;
   
-  }
+}
 
 ul#navi li a {
-  
-  
   text-decoration: none;
 	color: #FAF2DE;
-	font-size: 10px;
+	font-size: 12px;
   background-color: #A36D5C;
   padding: 4px;
 }
 
 ul#navi li a:hover {
-  
   color: #FAF2DE;
   background-color: #8A866A; /* alternate color for hovering. other choice: #9C968B */
 }
 
+
+
+/* Column Grids */
+/* See http://960.gs/ */
 @media screen and (min-width: 1010px) {
   .g960 #page {
     width: 940px; /*Total width works out to 960*/
@@ -87,6 +95,5 @@ ul#navi li a:hover {
     background-image: url('img/978px-15-54-15-unit.png');
   }
 }
-
 
 	
